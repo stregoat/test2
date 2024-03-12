@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SkiGear</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- меню -->
+      <div class="popup popup-close popup-open" id="popup">
+        <div class="popup-body" id="popup-body">
+            <div class="close">
+                <h5>Меню</h5>
+                <div id="close-popup">&#10006</div>
+            </div>
+            <nav>
+                <a href="main.html">главная</a>
+                <a  href="catalog.html">каталог</a>
+                <a href="card.html">корзина</a>
+                <a href="#">избранное</a>
+                <a href="#">войти</a>
+            </nav>
+        </div>
+      </div>
+      <!-- меню -->
+      <!-- шапка -->
+      <header>
+        <a class="logo" href="main.html"><img src="img/logo.svg" alt="" /></a>
+        <div class="menu" id="open-popup"><img src="img/menu.svg" alt=""></div>
+        <nav>
+          <a href="#news">новости</a>
+          <a href="#contacts">контакты</a>
+          <a href="catalog.html">каталог</a>
+          <a href="card.html">корзина</a>
+          <a href="card.html">избранное</a>
+        </nav>
+        <div class="sign signn">
+          <a class="user" href="#"><img src="img/user.svg" alt="" /></a>
+          <div class="tel">
+            <a class="mainn" href="tel:88655434321">+7 896 543-43-21</a>
+            <a href="tel:88655434321"><img src="img/tel.svg" alt="" /></a>
+          </div>
+        </div>
+      </header>
+      <!-- шапка -->
+
+      <!-- оформление -->
+      <div class="maintitle chk">
+        <div class="nav">
+          <a href="card.html"> < назад</a>
+        </div>
+        <h2>оформление</h2>
+      </div>
+      <div class="check">
+        <form class="address" action=".">
+          <div class="delivery">
+            <pre>в пункт выдачи    300 ₽</pre>
+            <pre>курьерская   900 ₽</pre>
+          </div>
+          <div class="inp">
+            имя
+            <input type="text" />
+          </div>
+          <div class="inp">
+            фамилия
+            <input type="text" />
+          </div>
+          <div class="inp">
+            отчество
+            <input type="text" />
+          </div>
+          <div class="inp">
+            телефон
+            <input type="text" placeholder="+ 7 (***) *** - ** - **" />
+          </div>
+          <div class="inp">
+            e-mail
+            <input type="text" />
+          </div>
+          <div class="inp">
+            город
+            <input type="text" />
+          </div>
+          <div class="inp">
+            адрес
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Улица, дом, кв/офис, индекс"
+            ></textarea>
+          </div>
+        </form>
+        <div class="pay">
+          <div class="cart">
+            <a href="#"><img src="img/visa.svg" alt="" /></a>
+            <a href="#"><img src="img/mc.svg" alt="" /></a>
+            <a href="#"><img src="img/mir.svg" alt="" /></a>
+          </div>
+          <form class="payform" action=".">
+            <div class="inp">
+              имя держателя карты
+              <input type="text"/>
+            </div>
+            <div class="inp">
+              номер карты
+              <input type="text" placeholder="**** **** **** ****"/>
+            </div>
+            <div class="inp">
+              срок действия карты
+              <div class="date">
+                  <input type="text" placeholder="мм"/>
+                  <input type="text" placeholder="гггг"/>
+              </div>
+            </div>
+            <div class="inp">
+              CVV
+              <div class="date">
+                  <input type="text" placeholder="***"/>
+              </div>
+            </div>
+          </form>
+          <div class="total">
+              <div class="row"><span>общая сумма</span> 12 800 ₽</div>
+              <div class="row"><span>доставка</span> 900 ₽</div>
+              <div class="row rr"><span>итог</span> <p> 13 700 ₽</p></div>
+              <div class="btn"><a href="#">оплатить</a></div>
+              
+          </div>
+        </div>
+      </div>
+      <!-- оформление -->
+    </div>
+
+    <!-- подвал -->
+    <footer class="mt">
+      <div class="container">
+        <div class="footer-content">
+          <a class="btn" href="#"
+            ><img src="img/btn.svg" alt="" />смотреть новости</a
+          >
+          <div class="form">
+            Подпишитесь на рассылку и получайте новости о наших <br />новинках
+            самыми первыми!
+            <form action=".">
+              <input type="text" placeholder="e-mail" />
+              <button>подписаться <img src="img/arw3.svg" alt="" /></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="link">
+            <a href="#"><img src="img/tgfoot.svg" alt="" /></a>
+            <a href="#"><img src="img/vkfoot.svg" alt="" /></a>
+            <a href="#"><img src="img/ytfoot.svg" alt="" /></a>
+          </div>
+          <a class="logo" href="main.html"
+            ><img src="img/logofoot.svg" alt=""
+          /></a>
+          <nav>
+            <a href="#news">новости</a>
+            <a href="#contacts">контакты</a>
+            <a href="catalog.html">каталог</a>
+            <a href="card.html">корзина</a>
+            <a href="card.html">избранное</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- подвал -->
+    <script>
+      // меню
+      const btn = document.getElementById('open-popup');
+
+      function openPopup() {
+          document.getElementById('popup').classList.add('popup-open')
+          document.getElementById('popup').classList.remove('popup-close')
+      }
+
+      function closePopup() {
+          document.getElementById('popup').classList.remove('popup-open')
+          document.getElementById('popup').classList.add('popup-close')
+      }
+
+      btn.onclick = function () {
+          openPopup()
+          document.body.style.overflow = "hidden"
+      }
+
+      document.getElementById('close-popup').onclick = function () {
+          closePopup()
+          document.body.style.overflow = "visible"
+      }
+      // меню
+
+    </script>
+  </body>
+</html>

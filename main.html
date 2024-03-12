@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SkiGear</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- меню -->
+      <div class="popup popup-close popup-open" id="popup">
+        <div class="popup-body" id="popup-body">
+            <div class="close">
+                <h5>Меню</h5>
+                <div id="close-popup">&#10006</div>
+            </div>
+            <nav>
+                <a style="color: #1E80BB; font-weight: 600;" href="main.html">главная</a>
+                <a  href="catalog.html">каталог</a>
+                <a href="card.html">корзина</a>
+                <a href="#">избранное</a>
+                <a href="#">войти</a>
+            </nav>
+        </div>
+      </div>
+      <!-- меню -->
+      <!-- шапка -->
+      <header>
+        <a class="logo" href="main.html"><img src="img/logo.svg" alt="" /></a>
+        <div class="menu" id="open-popup"><img src="img/menu.svg" alt=""></div>
+        <nav class="navmain">
+          <a href="#news">новости</a>
+          <a href="#contacts">контакты</a>
+          <a href="catalog.html">каталог</a>
+          <a href="card.html">корзина</a>
+          <a href="card.html">избранное</a>
+        </nav>
+        <div class="sign">
+          <a class="user" href="#"><img src="img/usermain.svg" alt="" /></a>
+          <div class="tel">
+            <a class="mainnn" href="tel:88655434321">+7 896 543-43-21</a>
+            <a href="tel:88655434321"><img src="img/telmain.svg" alt="" /></a>
+          </div>
+        </div>
+      </header>
+      <!-- шапка -->
+
+      <!-- баннер -->
+      <div class="main">
+        <div class="main-title">
+          <div class="title">
+            <h1>ПОКОРЯЙ</h1>
+            <h1>ВЫСОТЫ</h1>
+            <h1>С НАМИ</h1>
+          </div>
+          <div class="mainsub">
+            <div class="mainp">
+              Высококачественная горнолыжная <br />
+              экипировка по доступным ценам <br />
+              для самых смелых
+            </div>
+            <a class="btn" href="catalog.html"
+              ><p>к каталогу</p>
+              <img src="img/arw.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <img class="bgimg" src="img/banner.png" alt="" />
+      </div>
+      <!-- баннер -->
+      <!-- популярные товары -->
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="r" id="r1" />
+          <input type="radio" name="r" id="r2" />
+          <input type="radio" name="r" id="r3" />
+          <div class="card s1">
+            <a class="like" href="#"><img src="img/like.svg" alt="" /></a>
+            <img class="prod" src="img/prod1.png" alt="" />
+            <a href="product.html"
+              >Горнолыжные очки <br />
+              <span>Oakley Flight Tracker</span>
+            </a>
+            <p>12 800 ₽</p>
+            <a class="btn" href="card.html">в корзину</a>
+          </div>
+          <div class="card">
+            <a class="like" href="#"><img src="img/like.svg" alt="" /></a>
+            <img class="prod" src="img/card2.png" alt="" />
+            <a href="product.html"
+              >Пуховые перчатки  <br />
+              <span>Moncler Grenoble</span>
+            </a>
+            <p>16 300 ₽</p>
+            <a class="btn" href="card.html">в корзину</a>
+          </div>
+          <div class="card">
+            <a class="like" href="#"><img src="img/like.svg" alt="" /></a>
+            <img class="prod" src="img/card3.png" alt="" />
+            <a href="product.html"
+              >Шлем горнолыжный
+               <br />
+              <span>HEAD Rita Grey</span>
+            </a>
+            <p>9 700 ₽</p>
+            <a class="btn" href="card.html">в корзину</a>
+          </div>
+          <div class="card cn">
+            <a class="like" href="#"><img src="img/like.svg" alt="" /></a>
+            <img class="prod" src="img/card4.png" alt="" />
+            <a href="product.html"
+              >Лыжные ботинки<br/>
+              <span>KV+ Shoes TORNADO</span>
+            </a>
+            <p>32 310 ₽</p>
+            <a class="btn" href="card.html">в корзину</a>
+          </div>
+          <div class="card cn">
+            <a class="like" href="#"><img src="img/like.svg" alt="" /></a>
+            <img class="prod" src="img/card2.png" alt="" />
+            <a href="product.html"
+              >Пуховые перчатки  <br />
+              <span>Moncler Grenoble</span>
+            </a>
+            <p>16 300 ₽</p>
+            <a class="btn" href="card.html">в корзину</a>
+          </div>
+          <div class="card cn">
+            <a class="like" href="#"><img src="img/like.svg" alt="" /></a>
+            <img class="prod" src="img/card3.png" alt="" />
+            <a href="product.html"
+              >Шлем горнолыжный
+               <br />
+              <span>HEAD Rita Grey</span>
+            </a>
+            <p>9 700 ₽</p>
+            <a class="btn" href="card.html">в корзину</a>
+          </div>
+          <div class="navigation">
+            <label for="r1" class="lab lab1" onclick="changeColor1()"></label>
+            <label for="r2" class="lab lab2" onclick="changeColor2()"></label>
+            <label for="r3" class="lab lab3" onclick="changeColor3()"></label>
+          </div>
+        </div>
+      </div>
+      <!-- популярные товары -->
+      <!-- о нас -->
+      <div class="about mt">
+        <div class="title">
+          <h2>о нас</h2>
+          <div class="mainp">
+            Интернет-магазин горнолыжной экипировки SkiGear предлагает широкий
+            ассортимент высококачественной экипировки для горнолыжного спорта. У
+            нас вы найдете все необходимое для комфортного и безопасного
+            катания: лыжи, ботинки, одежду, аксессуары и многое другое. Наш
+            магазин гарантирует отличное качество товаров и профессиональный
+            подход к обслуживанию клиентов.
+          </div>
+        </div>
+        <div class="advan">
+          <div class="card-advan">
+            <p>6 <span>лет</span></p>
+            <p>радуем наших клиентов</p>
+          </div>
+          <div class="card-advan">
+            <p>60 <span>+</span></p>
+            <p>известных брендов</p>
+          </div>
+          <div class="card-advan">
+            <p>1000 <span>+</span></p>
+            <p>честных отзывов</p>
+          </div>
+          <div class="card-advan">
+            <a href="#"><img src="img/btn.svg" alt="" /></a>
+            <a href="#">смотреть отзывы</a>
+          </div>
+        </div>
+      </div>
+      <!-- о нас -->
+
+      <!-- категории -->
+      <div class="ct titlee mt">
+        <a class="btn" href="catalog.html"
+          ><p>смотреть все</p>
+          <img src="img/arw2.svg" alt="" />
+        </a>
+        <h2>категории</h2>
+      </div>
+      <div class="category">
+        <div class="cat cat1">
+          <a class="btn" href="#"><img src="img/btn2.svg" alt="" /></a>
+          <div class="name">
+            ЛЫЖНЫЕ <br />
+            КОСТЮМЫ
+          </div>
+        </div>
+        <div class="cat cat2">
+          <a class="btn" href="#"><img src="img/btn2.svg" alt="" /></a>
+          <div class="name">все для лыж</div>
+        </div>
+        <div class="catt">
+          <div class="cat cat3">
+            <a class="btn" href="#"><img src="img/btn2.svg" alt="" /></a>
+            <div class="name">
+              все для <br />
+              сноубордов
+            </div>
+          </div>
+          <div class="cat cat4">
+            <a class="btn" href="#"><img src="img/btn2.svg" alt="" /></a>
+            <div class="name">аксессуары</div>
+          </div>
+        </div>
+      </div>
+      <!-- категории -->
+
+      <!-- новости -->
+      <div class="titlee mt" id="news">
+        <h2>новости</h2>
+        <a class="btn" href="#">
+          <p>смотреть все</p>
+          <img src="img/arw2.svg" alt=""
+        /></a>
+      </div>
+      <div class="news">
+        <div class="nnew">
+          <div class="new new1">
+            <a class="btn" href="#"><img src="img/btn3.svg" alt="" /></a>
+            <div class="name">
+              Новая коллекция обуви <br />
+              уже в каталоге! <br />
+              <span>Columbia, MoonBoots, Moncler</span>
+            </div>
+          </div>
+          <div class="new new2">
+            <a class="btn" href="#"><img src="img/btn3.svg" alt="" /></a>
+            <div class="name">
+              <span>MONCLER</span> <br />
+              Эксклюзивные новинки <br />
+              известного бренда только у нас!
+            </div>
+          </div>
+        </div>
+        <div class="new new3">
+          <a class="btn" href="#"><img src="img/btn3.svg" alt="" /></a>
+          <div class="name">
+            <span>10.02 - 23.02</span> <br />
+            спешите потратить бонусы <br />
+            оплачивайте бонусами до 30% покупки
+          </div>
+        </div>
+      </div>
+      <!-- новости -->
+
+      <!-- контакты -->
+      <div class="contact mt" id="contacts">
+        <div class="titlee ct">
+          <p class="pp">Остались вопросы? Смело задавайте их нам!</p>
+          <h2>контакты</h2>
+        </div>
+        <div class="contacts">
+          <form action=".">
+            <div class="inp">
+              имя
+              <input type="text" />
+            </div>
+            <div class="inp">
+              телефон
+              <input type="text" />
+            </div>
+            <div class="inp">
+              вопрос
+              <textarea></textarea>
+            </div>
+            <button>отправить <img src="img/arw3.svg" alt="" /></button>
+          </form>
+          <div class="contact-content">
+            <div class="cnt">
+              <div class="inp">
+                телефон
+                <a href="#">+7 896 543-43-21</a>
+              </div>
+              <div class="inp">
+                почта
+                <a href="#">skigear@mai.com</a>
+              </div>
+              <div class="inp">
+                адрес
+                <a href="#"
+                  >г. Казань <br />
+                  ул. Галеева 3а</a
+                >
+              </div>
+              <div class="link">
+                <a href="#"><img src="img/vk.svg" alt="" /></a>
+                <a href="#"><img src="img/tg.svg" alt="" /></a>
+                <a href="#"><img src="img/yt.svg" alt="" /></a>
+              </div>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.511323473457!2d49.17443297644384!3d55.801722988222544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eb2821ae12973%3A0xb7064b3d52be5316!2z0YPQuy4g0JPQsNC70LXQtdCy0LAsIDPQkCwg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAwNjE!5e0!3m2!1sru!2sru!4v1709460793841!5m2!1sru!2sru"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- контакты -->
+    </div>
+    <!-- подвал -->
+    <footer class="mt">
+      <div class="container">
+        <div class="footer-content">
+          <a class="btn" href="#"
+            ><img src="img/btn.svg" alt="" />смотреть новости</a
+          >
+          <div class="form">
+            Подпишитесь на рассылку и получайте новости о наших <br />новинках
+            самыми первыми!
+            <form action=".">
+              <input type="text" placeholder="e-mail" />
+              <button>подписаться <img src="img/arw3.svg" alt="" /></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="link">
+            <a href="#"><img src="img/tgfoot.svg" alt="" /></a>
+            <a href="#"><img src="img/vkfoot.svg" alt="" /></a>
+            <a href="#"><img src="img/ytfoot.svg" alt="" /></a>
+          </div>
+          <a class="logo" href="main.html"
+            ><img src="img/logofoot.svg" alt=""
+          /></a>
+          <nav>
+            <a href="#news">новости</a>
+            <a href="#contacts">контакты</a>
+            <a href="catalog.html">каталог</a>
+            <a href="card.html">корзина</a>
+            <a href="card.html">избранное</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- подвал -->
+    <script>
+      // меню
+      const btn = document.getElementById('open-popup');
+
+      function openPopup() {
+          document.getElementById('popup').classList.add('popup-open')
+          document.getElementById('popup').classList.remove('popup-close')
+      }
+
+      function closePopup() {
+          document.getElementById('popup').classList.remove('popup-open')
+          document.getElementById('popup').classList.add('popup-close')
+      }
+
+      btn.onclick = function () {
+          openPopup()
+          document.body.style.overflow = "hidden"
+      }
+
+      document.getElementById('close-popup').onclick = function () {
+          closePopup()
+          document.body.style.overflow = "visible"
+      }
+      // меню
+
+      // слайдер
+      window.addEventListener("load", () => {
+        document.querySelector(".lab1").style.background = "#FFA800";
+      });
+      function changeColor1() {
+        document.querySelector(".lab1").style.background = "#FFA800";
+        document.querySelector(".lab2").style.background = "#ffaa004b";
+        document.querySelector(".lab3").style.background = "#ffaa004b";
+      }
+      function changeColor2() {
+        document.querySelector(".lab2").style.background = "#FFA800";
+        document.querySelector(".lab1").style.background = "#ffaa004b";
+        document.querySelector(".lab3").style.background = "#ffaa004b";
+      }
+      function changeColor3() {
+        document.querySelector(".lab3").style.background = "#FFA800";
+        document.querySelector(".lab2").style.background = "#ffaa004b";
+        document.querySelector(".lab1").style.background = "#ffaa004b";
+      }
+      // слайдер
+    </script>
+  </body>
+</html>
