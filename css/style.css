@@ -2069,7 +2069,7 @@ footer nav a:hover {
     }
     /* корзинаф */
 
-    /* оформление */
+    /* оформлениgе */
     .check, .delivery, .address, .pay, .payform, .date {
         flex-direction: column;
         justify-content: center;
