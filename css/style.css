@@ -1482,7 +1482,7 @@ footer nav a:hover {
 
     .container {
         padding: 0 15px;
-        max-width: 375px;
+        width: 375px;
         margin: 0 auto;
     }
 
@@ -1500,8 +1500,9 @@ footer nav a:hover {
     }
 
     header {
+        width: 350px;
         margin-top: -50px;
-        max-width: 375px;
+        padding-right: 0;
     }
 
     .logo img{
@@ -1644,7 +1645,7 @@ footer nav a:hover {
     .slider {
        left: -200px;
        top: 490px;
-       width: 365px;
+       width: 355px;
        white-space: nowrap;
     }
 
@@ -1778,6 +1779,10 @@ footer nav a:hover {
         flex-direction: column;
     }
 
+    .contact-content {
+        width: 0;
+    }
+
     .contact .titlee .pp {
         font-size: 20px;
         text-align: center;
@@ -1814,15 +1819,19 @@ footer nav a:hover {
     }
 
     .cnt {
-        width: 350px;
+        width: 330px;
         gap: 15px;
-        margin-left: -70px;
+        margin-left: -80px;
         margin-top: 60px;
         position: relative;
     }
 
     .cnt .inp:nth-child(2) {
-        padding-right: 70px;
+        padding-right: 50px;
+    }
+
+    .cnt .inp {
+        padding-left: 10px;
     }
 
     .cnt .link {
@@ -1873,9 +1882,9 @@ footer nav a:hover {
 
     .product .switch {
         flex-direction: row;
-        margin-left: 110px;
+        margin-left: 70px;
         bottom: 0;
-        width: 290px;
+        width: 250px;
         flex-wrap: wrap;
     }
 
@@ -1887,6 +1896,8 @@ footer nav a:hover {
         font-size: 96px;
         margin-left: -140px;
         margin-top: -150px;
+        overflow: hidden;
+        width: 400px;
     }
 
     .product-info .title h4 {
@@ -2063,6 +2074,11 @@ footer nav a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 350px;
+    }
+
+    .payform form{
+        justify-content: center;
     }
 
     .delivery pre{
@@ -2072,14 +2088,14 @@ footer nav a:hover {
     .total {
         width: 300px;
         font-size: 16px;
-        margin-left: 250px;
+        margin-left: 25px;
     }
 
     .total .btn a{
         padding: 10px 115px;
     }
 
-    .check form input, .check form textarea {
+    .check form input, .check form textarea, .payform .date {
         width: 300px;
     }
 
@@ -2088,8 +2104,9 @@ footer nav a:hover {
     }
 
     .cart {
-        margin-left: 285px;
+        justify-content: center;
         margin-top: 60px;
+        width: 350px;
     }
 
     .chk h2 {
